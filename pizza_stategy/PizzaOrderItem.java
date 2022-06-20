@@ -47,4 +47,8 @@ public class PizzaOrderItem {
         return this.pizza.getPrice * this.amount;
     }
 
+    public Float getItemPay() {
+
+        return this.pizza.getItemCost() - this.pizza.getItemDiscount();
+    }
 }

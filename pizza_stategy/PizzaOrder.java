@@ -37,4 +37,9 @@ public class PizzaOrder {
         return totalCost;
     }
 
+    public Float getTotalPay() {
+
+        return this.getTotalCost() - this.getTotalPercentOffDiscount();
+    }
+
 }
